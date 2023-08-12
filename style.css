@@ -7,6 +7,8 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #000235;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 body header {
   display: flex;
@@ -81,6 +83,9 @@ body header nav ul .drop3 {
   left: -150px;
   top: 30px;
 }
+body header .fa-bars {
+  display: none;
+}
 body main {
   padding: 0 180px;
 }
@@ -136,6 +141,9 @@ body main .hero-section .hero-right {
   background-image: url("./images/hero-img.png");
   background-size: contain;
   background-repeat: no-repeat;
+}
+body main .hero-section .hero-right img {
+  display: none;
 }
 body main .sec2 {
   margin-top: 69px;
@@ -537,4 +545,409 @@ body footer .footer-groups form #submit-btn {
   position: absolute;
   right: 5px;
   top: 22.5px;
+}
+
+@media screen and (max-width: 605px) {
+  body header {
+    padding: 0 10px;
+  }
+  body header nav {
+    display: none;
+  }
+  body header .fa-bars {
+    display: block;
+  }
+  body main {
+    padding: 0 10px;
+  }
+  body main .hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .hero-section .hero-left {
+    width: 100%;
+    height: 450px;
+    color: white;
+    margin: 38px 0 0;
+  }
+  body main .hero-section .hero-left .stub-h1 {
+    height: 350px;
+  }
+  body main .hero-section .hero-left .stub-h1 h1 {
+    color: #f39036;
+    font-size: 60px;
+    line-height: 50px;
+  }
+  body main .hero-section .hero-left .stub-h1 p {
+    width: 303px;
+    height: 45px;
+    font-size: 14px;
+  }
+  body main .hero-section .hero-left span {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  body main .hero-section .hero-left span a {
+    padding: 15px 15px;
+  }
+  body main .hero-section .hero-left span .btn-one {
+    background-color: #f39036;
+    margin-right: 20px;
+  }
+  body main .hero-section .hero-left span .btn-one:hover {
+    border: 1px solid #f39036;
+    background-color: transparent;
+  }
+  body main .hero-section .hero-left span .btn-two {
+    border: 1px solid #f39036;
+  }
+  body main .hero-section .hero-left span .btn-two:hover {
+    background-color: #f39036;
+  }
+  body main .hero-section .hero-right {
+    width: 100%;
+    background-image: url("./images/hero-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body main .hero-section .hero-right img {
+    width: 100%;
+    position: absolute;
+    mix-blend-mode: color-dodge;
+    top: 100px;
+    z-index: -1;
+    display: block;
+  }
+  body main .sec2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  body main .sec2 .featured-logo-container {
+    height: 101px;
+    flex-wrap: wrap;
+  }
+  body main .sec2 .featured-logo-container .circle-container .circle {
+    font-size: 23px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  body main .sec2 .featured-logo-container .circle-container a {
+    margin-left: 10px;
+  }
+  body main .sec2 .featured-logo-container .atlassian-logo {
+    margin-left: 10px;
+  }
+  body main .sec2 .featured-logo-container .atlassian-logo .featured-logo-img {
+    width: 30px;
+  }
+  body main .sec2 .featured-logo-container .atlassian-logo a {
+    margin-left: 10px;
+  }
+  body main .sec2 .featured-logo-container .atlassian-logo a img {
+    height: 12px;
+  }
+  body main .sec2 .featured-logo-container .facebook-logo {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-left: 10px;
+  }
+  body main .sec2 .featured-logo-container .facebook-logo .facebook {
+    font-family: Verdana, sans-serif;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4661ee;
+  }
+  body main .sec2 .featured-logo-container .facebook-logo a {
+    color: #3e45eb;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  body main .sec2 .featured-logo-container .dropbox-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    background-color: transparent;
+  }
+  body main .sec2 .featured-logo-container .dropbox-logo .featured-logo-img {
+    background-color: transparent;
+    width: 30px;
+  }
+  body main .sec2 .featured-logo-container .dropbox-logo a {
+    color: black;
+    background-color: transparent;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  body main .sec2 .featured-logo-container .dropbox-logo a img {
+    width: 8;
+    height: 12px;
+  }
+  body main .sec3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 153px;
+    position: relative;
+  }
+  body main .sec3 .sec3-left {
+    width: 100%;
+  }
+  body main .sec3 .sec3-left .sec3-img {
+    width: 300px;
+    position: absolute;
+    top: 10px;
+  }
+  body main .sec3 .sec3-right {
+    width: 100%;
+    position: relative;
+    top: 150px;
+    z-index: 2;
+  }
+  body main .sec3 .sec3-right h1 {
+    font-size: 57px;
+    color: white;
+  }
+  body main .sec3 .sec3-right p {
+    font-size: 12px;
+    color: white;
+    width: 333px;
+    margin: 22px 0;
+  }
+  body main .sec3 .sec3-right a {
+    font-size: 12px;
+    padding: 15px 20px;
+  }
+  body main .sec3 .sec3-right a:hover {
+    transform: translateY(20px);
+    transition: 2s;
+  }
+  body main .sec4 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+  }
+  body main .sec4 .bigcircle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 190px;
+  }
+  body main .sec4 .sec4-left {
+    width: 100%;
+    position: relative;
+    top: 100px;
+    z-index: 2;
+  }
+  body main .sec4 .sec4-left h1 {
+    font-size: 57px;
+    color: white;
+  }
+  body main .sec4 .sec4-left p {
+    font-size: 12px;
+    color: white;
+    width: 333px;
+    margin: 22px 0;
+  }
+  body main .sec4 .sec4-left a {
+    padding: 15px 20px;
+  }
+  body main .sec4 .sec4-left a:hover {
+    transform: translateY(20px);
+    transition: 2s;
+  }
+  body main .sec4 .sec4-right {
+    width: 100%;
+  }
+  body main .sec4 .sec4-right .sec4-img {
+    position: absolute;
+    top: 0;
+    width: 350px;
+    mix-blend-mode: lighten;
+  }
+  body main .testimonials {
+    top: 90px;
+    text-align: center;
+    height: 1000px;
+    position: relative;
+  }
+  body main .testimonials .redbox {
+    bottom: -10px;
+    right: 10px;
+    width: 204px;
+    height: 200px;
+    z-index: 1;
+  }
+  body main .testimonials p {
+    padding-bottom: 20px;
+  }
+  body main .testimonials h1 {
+    font-size: 30px;
+  }
+  body main .testimonials .testi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    position: relative;
+    z-index: 4;
+  }
+  body main .testimonials .testi-container .testi-items {
+    height: 242px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+  }
+  body main .testimonials .testi-container .testi-items img {
+    width: 105px;
+    height: 105px;
+    left: 32%;
+    top: 0;
+  }
+  body main .testimonials .testi-container .testi-items div {
+    padding-right: 10px;
+    bottom: 10px;
+  }
+  body main .testimonials .testi-container .testi-items div p {
+    padding-top: 10px;
+  }
+  body main .testimonials .testi-container .bandok {
+    margin: 0;
+  }
+  body main .tokens {
+    position: relative;
+    z-index: 1;
+  }
+  body main .tokens .ring-img {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+  body main .tokens .token-container {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  body main .tokens .token-container .token-items {
+    width: 250px;
+    padding: 30px;
+    font-size: 30px;
+  }
+  body main .tokens .token-container .token-center {
+    margin: 0 50px;
+  }
+  body main .most-secure {
+    height: 750px;
+    margin-top: 90px;
+  }
+  body main .most-secure .first-bitcoin {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    color: #f39036;
+    z-index: -1;
+  }
+  body main .most-secure .second-bitcoin {
+    position: absolute;
+    left: 0px;
+    top: 650px;
+    color: #f39036;
+    z-index: -1;
+  }
+  body main .most-secure .extra-details {
+    padding: 20px;
+  }
+  body main .most-secure .extra-details h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  body main .most-secure .extra-details .extra-details-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0;
+  }
+  body main .most-secure .extra-details .extra-details-container .extra-details-items {
+    width: 237px;
+    height: 123px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #676883;
+    box-shadow: 0 0 2px rgb(78, 77, 77);
+  }
+  body main .most-secure .extra-details .extra-details-container .extra-details-items h3 {
+    font-size: 18px;
+    padding: 10px 0 20px;
+  }
+  body main .most-secure .extra-details .extra-details-container .extra-details-items p {
+    font-size: 14px;
+  }
+  body footer {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 627px;
+    color: white;
+    margin-top: 139px;
+    text-align: center;
+  }
+  body footer .logo {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  body footer .footer-boss {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer .footer-groups {
+    margin-top: 20px;
+  }
+  body footer .footer-groups h3 {
+    color: #f39036;
+  }
+  body footer .footer-groups ul {
+    list-style: none;
+  }
+  body footer .footer-groups ul a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-top: 17px;
+  }
+  body footer .footer-groups form {
+    position: relative;
+  }
+  body footer .footer-groups form #footer-searchbar {
+    width: 250px;
+    height: 58px;
+    border: 0;
+  }
+  body footer .footer-groups form #submit-btn {
+    width: 104px;
+    height: 46px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #9192DD;
+    position: absolute;
+    right: 5px;
+    top: 22.5px;
+  }
 }/*# sourceMappingURL=style.css.map */
