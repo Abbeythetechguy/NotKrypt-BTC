@@ -499,7 +499,8 @@ body footer {
   padding: 0 150px;
   display: flex;
   justify-content: space-between;
-  height: 177px;
+  align-items: center;
+  height: 277px;
   color: white;
   margin-top: 139px;
 }
@@ -516,27 +517,36 @@ body footer .logo .logo-img {
   display: inline-block;
   margin-right: 10px;
 }
-body footer .footer-groups ul {
+body footer .footer-boss {
+  display: flex;
+}
+body footer .footer-boss .footer-groups {
+  width: 130px;
+}
+body footer .footer-boss .footer-groups ul {
   list-style: none;
 }
-body footer .footer-groups ul a {
+body footer .footer-boss .footer-groups ul a {
   display: inline-block;
   color: white;
   text-decoration: none;
   margin-top: 17px;
 }
-body footer .footer-groups form {
+body footer form {
   position: relative;
 }
-body footer .footer-groups form #footer-searchbar {
+body footer form #footer-searchbar {
   width: 360px;
   height: 58px;
   border-radius: 30px;
   border: 0;
+  padding: 10px;
   background-color: #181449;
   margin-top: 16px;
+  color: white;
+  font-size: 17px;
 }
-body footer .footer-groups form #submit-btn {
+body footer form #submit-btn {
   width: 124px;
   height: 46px;
   border-radius: 30px;
